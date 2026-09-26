@@ -1,0 +1,19 @@
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.DS_Store
+
+# 生成物。作り直せるので上げない。
+data/output/
+data/backup/
+
+# Googleサービスアカウントの鍵・合言葉。絶対に上げない。
+.streamlit/secrets.toml
+*secrets*
+*.json
+!.claude/launch.json
+
+# 実物の勤務表が紛れ込むのを防ぐ。デモのデータは data/ の中に置くこと。
+/*.xlsx
+/*.numbers

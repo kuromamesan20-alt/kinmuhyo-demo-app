@@ -1,0 +1,124 @@
+_使い方:
+- その月の希望休・希望出勤です。日にち -> 記号。
+- 「公」は希望休、それ以外はその勤務での希望出勤です。
+requests:
+- staff_id: 佐藤
+  name: 佐藤
+  entries: {}
+- staff_id: 138fbf06-527f-4971-b3bb-481141476f9d
+  name: 高橋
+  entries:
+    5: 公
+    19: 公
+- staff_id: 田中
+  name: 田中
+  entries: {}
+- staff_id: 28ae9562-31e0-4e47-9ce0-9ec90ee23fc3
+  name: 伊藤
+  entries:
+    12: 公
+- staff_id: d8930249-8f31-485e-92be-b15b48223e49
+  name: 渡辺
+  entries:
+    3: 公
+    23: 有
+- staff_id: 665ef4be-02d2-4fd0-a5a4-0d7874c7c022
+  name: 山本
+  entries:
+    9: 公
+- staff_id: 4d39f5c7-24fb-4c20-b504-6ad4ea2d7529
+  name: 山田
+  entries:
+    3: 公
+    12: ○
+    13: △
+    15: 公
+    16: 公
+- staff_id: 39b31416-3cf7-4cd4-b71a-840fdfd99a33
+  name: 加藤
+  entries:
+    7: 公
+- staff_id: 2c92d46f-457e-4e4b-9152-0b8458de84f8
+  name: 吉田
+  entries:
+    21: 公
+- staff_id: 124e2a0f-c43c-4818-a60c-2fbc3317c331
+  name: 山口
+  entries:
+    11: 有
+- staff_id: 47978576-2e6f-4bca-a910-03b34c3075e1
+  name: 松本
+  entries:
+    25: 公
+- staff_id: a529e528-a5d1-4da2-bfe7-aa90f1bf5ae4
+  name: 井上
+  entries:
+    2: 公
+    18: 公
+- staff_id: 6dcc6906-b95f-46f8-888f-9067c20d723c
+  name: 木村
+  entries:
+    28: 公
+- staff_id: d919735e-0018-4c0e-9b34-4e836fd03ad4
+  name: 清水
+  entries:
+    14: ○
+    15: △
+- staff_id: 7f259811-b2d8-4cb2-a810-a88a25fda705
+  name: 阿部
+  entries: {}
+- staff_id: 6c2f0510-b021-4f22-a175-f30bd6b445fa
+  name: 森田
+  entries:
+    6: 日③
+- staff_id: ade0b113-45f0-4264-a2a9-d56850bef8ed
+  name: 池田
+  entries: {}
+- staff_id: 051f938b-aeac-409c-afeb-256f7c27a3fa
+  name: 橋本
+  entries: {}
+- staff_id: e0d64222-c7cf-4ce6-b540-bfcf6524241f
+  name: 石川
+  entries: {}
+- staff_id: d15e662f-445a-4209-bca9-5f563801d5e5
+  name: 藤田
+  entries: {}
+- staff_id: 7398dd80-2d55-4d28-98c1-cabb14912d90
+  name: 後藤
+  entries: {}
+- staff_id: 42b185a9-9e49-493b-9a79-240b557b367f
+  name: 小川
+  entries: {}
+- staff_id: aa24add7-040d-4d27-b707-0e15135ba2c8
+  name: 岡田
+  entries: {}
+- staff_id: d5afb305-df36-43eb-b3ba-701fedc3f9c7
+  name: 村上
+  entries: {}
+- staff_id: 0e103dd8-6218-4a8a-9bf7-bb10557d8620
+  name: 近藤
+  entries: {}
+- staff_id: 636a5bb4-9476-4c13-b742-a660ab60388e
+  name: 坂本
+  entries: {}
+- staff_id: 遠藤
+  name: 遠藤
+  entries: {}
+- staff_id: 38f223f9-c3dd-47f4-86d9-94111a69df11
+  name: 青木
+  entries: {}
+- staff_id: 255ee3c6-5f9d-49e2-92cf-cb50be2d8467
+  name: 福田
+  entries: {}
+- staff_id: 909299c6-19e2-4f92-a30e-5c61f46d4a7d
+  name: 三浦
+  entries: {}
+- staff_id: 0ece7e87-b915-4e98-80dd-13bfa1635dd1
+  name: 太田
+  entries: {}
+- staff_id: 730d7f54-2912-4491-b758-f5b8c2cb1305
+  name: 原田
+  entries: {}
+- staff_id: e34d6b05-d7a3-4e27-bda4-fc0ed08aa71d
+  name: 中島
+  entries: {}

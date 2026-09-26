@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "希望入力アプリ",
+      "runtimeExecutable": "./venv/bin/python",
+      "runtimeArgs": ["-m", "streamlit", "run", "app.py", "--server.port", "8520", "--server.headless", "true"],
+      "port": 8520
+    }
+  ]
+}

@@ -1,0 +1,2346 @@
+_使い方:
+- needs_review が true の人を上から確認し、内容を直してください。
+- 直したら review_reasons を空にし、ファイル名から _draft を外して保存します。
+- 曜日は 0=月 1=火 2=水 3=木 4=金 5=土 6=日 です。
+- unparsed_notes は自動で読み取れなかった原文です。必要なら手で条件に反映してください。
+staff:
+- staff_id: 佐藤
+  name: 佐藤
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '1'
+  unit: ''
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: true
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 基本は「日」。早出・遅出は他の人を優先し、どうしても難しいときのみ。夜勤・深夜は不可
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: '「日」を普段の勤務とし、それ以外の日勤帯は「他の人で埋まらないときだけ入る」扱いにしました: 「早出・遅出は他の人を優先し、どうしても難しいときのみ」'
+    code: last_resort
+    payload:
+      sentence: 早出・遅出は他の人を優先し、どうしても難しいときのみ
+      primary: 日
+    item_id: 697f712f
+  customer_answers: {}
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '「日」を普段の勤務とし、それ以外の日勤帯は「他の人で埋まらないときだけ入る」扱いにしました: 「早出・遅出は他の人を優先し、どうしても難しいときのみ」'
+- staff_id: 138fbf06-527f-4971-b3bb-481141476f9d
+  name: 高橋
+  role: 看護師
+  employment_type: パート（時間給）
+  sheet_label: '10'
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 4
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays:
+  - 2
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours:
+  - 09:00
+  - '17:00'
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: '毎週水曜日は休み。
+
+    9時〜17時の勤務'
+  raw_notes: 週に4回、 / 希望した日のみ勤務(施設の担当者のご要望・2026年9月) / 施設の担当者は「高橋木」と呼ばれることがある(同一の方・確認済み)
+  unparsed_notes:
+  - '[備考] 週に4回、'
+  review_items:
+  - message: '備考に未解釈の記述あり: 「週に4回、」'
+    code: unparsed
+    payload:
+      sentence: 週に4回、
+    item_id: 9e998c45
+  customer_answers:
+    138fbf06-527f-4971-b3bb-481141476f9d#dc233961: 9時から17時の勤務が週に４回という意味です
+  needs_review: true
+  _固定休み曜日:
+  - 水
+  review_reasons:
+  - '備考に未解釈の記述あり: 「週に4回、」'
+- staff_id: 田中
+  name: 田中
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: ''
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: true
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 日勤のみ
+  raw_notes: ''
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 28ae9562-31e0-4e47-9ce0-9ec90ee23fc3
+  name: 伊藤
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ①
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 1
+  - 2
+  late_night_shift_count:
+  - 3
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: true
+  avoid_early: true
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤1〜2回。
+
+    深夜3〜4回。'
+  raw_notes: '早出はやらせていない。
+
+    夜勤と深夜は希望してくる'
+  unparsed_notes: []
+  review_items:
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤と深夜は希望してくる」'
+    code: ambiguous
+    payload:
+      sentence: 夜勤と深夜は希望してくる
+    item_id: dff2efde
+  - message: CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 早出
+      removed:
+      - 日①
+      - 日②
+    item_id: 1544719e
+  customer_answers:
+    28ae9562-31e0-4e47-9ce0-9ec90ee23fc3#77239adb: 勤務表を組む前に希望。出勤を聞くので、その希望日を汲み取ります。必ず守ります。
+    28ae9562-31e0-4e47-9ce0-9ec90ee23fc3#99b39557: はい（合っています）
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤と深夜は希望してくる」'
+  - CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+- staff_id: d8930249-8f31-485e-92be-b15b48223e49
+  name: 渡辺
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ⑳
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 3
+  can_night: false
+  can_late_night: false
+  available_day_shifts: []
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots:
+  - weekday: 1
+    start: 09:00
+    end: '15:00'
+  - weekday: 2
+    start: 09:00
+    end: '13:00'
+  - weekday: 4
+    start: 09:00
+    end: '15:00'
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週火曜日は9-15時
+
+    水曜日は9-13時
+
+    金曜日は9-15時'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 665ef4be-02d2-4fd0-a5a4-0d7874c7c022
+  name: 山本
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ②
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 3
+  - 4
+  late_night_shift_count:
+  - 3
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤3〜4回
+
+    深夜3〜4回希望'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「深夜3〜4回希望」'
+    code: ambiguous
+    payload:
+      sentence: 深夜3〜4回希望
+    item_id: 064d628b
+  customer_answers:
+    665ef4be-02d2-4fd0-a5a4-0d7874c7c022#cb4fa02e: できれば叶えたい希望
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「深夜3〜4回希望」'
+- staff_id: 4d39f5c7-24fb-4c20-b504-6ad4ea2d7529
+  name: 山田
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '2'
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 4
+  - 5
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: 可
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: ''
+  raw_notes: '夜勤4〜5回
+
+    日責可能'
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 39b31416-3cf7-4cd4-b71a-840fdfd99a33
+  name: 加藤
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ③
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 0
+  - 3
+  late_night_shift_count:
+  - 0
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints:
+  - other_staff: 山田
+    kind: max_shared_night
+    max_count: 1
+  - other_staff: 小川
+    kind: max_shared_night
+    max_count: 1
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤3回以下。
+
+    深夜3回以下。'
+  raw_notes: 夜勤はスタッフAとEは一回まで
+  unparsed_notes:
+  - '[備考] 夜勤はスタッフAとEは一回まで'
+  review_items:
+  - message: '備考に未解釈の記述あり: 「夜勤はスタッフAとEは一回まで」'
+    code: unparsed
+    payload:
+      sentence: 夜勤はスタッフAとEは一回まで
+    item_id: 4cee3565
+  - message: '同席の相手を担当者さんが確認して確定しました: 山田と同席は月1回まで、小川と同席は月1回まで'
+    code: pair_confirmed
+    payload:
+      label: 加藤/同席
+    item_id: 3daadbf1
+  customer_answers:
+    39b31416-3cf7-4cd4-b71a-840fdfd99a33#22d78c2b: はい（合っています）
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '備考に未解釈の記述あり: 「夜勤はスタッフAとEは一回まで」'
+  - '同席の相手を担当者さんが確認して確定しました: 山田と同席は月1回まで、小川と同席は月1回まで'
+- staff_id: 2c92d46f-457e-4e4b-9152-0b8458de84f8
+  name: 吉田
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '3'
+  unit: ばら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: '7時より前の早番不可
+
+    20:30以降の遅番不可'
+  raw_notes: 3〜4回
+  unparsed_notes:
+  - '[備考] 3〜4回'
+  review_items:
+  - message: '備考に未解釈の記述あり: 「3〜4回」'
+    code: unparsed
+    payload:
+      sentence: 3〜4回
+    item_id: d4eb91a2
+  customer_answers:
+    2c92d46f-457e-4e4b-9152-0b8458de84f8#d2f26968: 週に３〜４回の勤務
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '備考に未解釈の記述あり: 「3〜4回」'
+- staff_id: 124e2a0f-c43c-4818-a60c-2fbc3317c331
+  name: 山口
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ㉒
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 4
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日③
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays:
+  - 4
+  weekend_off_either: true
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週金曜日は休み。
+
+    毎週土曜日か日曜日どちらかは休みたい。
+
+    毎週4回勤務は作る側で決めて良いです。'
+  raw_notes: 希望した日のみ勤務(施設の担当者のご要望・2026年9月)
+  unparsed_notes:
+  - '[固定条件] 毎週4回勤務は作る側で決めて良いです'
+  review_items:
+  - message: '固定条件に未解釈の記述あり: 「毎週4回勤務は作る側で決めて良いです」'
+    code: unparsed
+    payload:
+      sentence: 毎週4回勤務は作る側で決めて良いです
+    item_id: bd624d86
+  - message: CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 早出
+      removed:
+      - 日①
+      - 日②
+    item_id: 1544719e
+  - message: CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 遅出
+      removed:
+      - 日⑤
+      - 日⑦
+      - 日⑨
+    item_id: 6cf66e35
+  customer_answers:
+    124e2a0f-c43c-4818-a60c-2fbc3317c331#2e42c4a4: はい（合っています）
+    124e2a0f-c43c-4818-a60c-2fbc3317c331#40ffee9d: 遅出とは、日５、日７、日９です。
+    124e2a0f-c43c-4818-a60c-2fbc3317c331#df86318b: 週に4日の勤務を組んでください。曜日についてはいつでもオッケーです。日勤のみの勤務でお願いします
+  needs_review: true
+  _固定休み曜日:
+  - 金
+  review_reasons:
+  - '固定条件に未解釈の記述あり: 「毎週4回勤務は作る側で決めて良いです」'
+  - CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+  - CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+- staff_id: 47978576-2e6f-4bca-a910-03b34c3075e1
+  name: 松本
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ④
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 4
+  - 5
+  late_night_shift_count:
+  - 0
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤4〜5回希望
+
+    深夜3回以下。'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤4〜5回希望」'
+    code: ambiguous
+    payload:
+      sentence: 夜勤4〜5回希望
+    item_id: 336a37fb
+  customer_answers:
+    47978576-2e6f-4bca-a910-03b34c3075e1#6ce57c2c: 必ず守る
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤4〜5回希望」'
+- staff_id: a529e528-a5d1-4da2-bfe7-aa90f1bf5ae4
+  name: 井上
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ㉑
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 2
+  can_night: false
+  can_late_night: false
+  available_day_shifts: []
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours:
+  - 08:00
+  - '15:00'
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: '出勤可能な日を希望します。
+
+    日勤または時短9-16時
+
+    8-15時など'
+  raw_notes: 希望した日のみ勤務(施設の担当者のご要望・2026年9月)。予定を出せる時期が不定期で、仕上がってから伺うことがある
+  unparsed_notes: []
+  review_items:
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「出勤可能な日を希望します」'
+    code: ambiguous
+    payload:
+      sentence: 出勤可能な日を希望します
+    item_id: 3dd9cd29
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「日勤または時短9-16時」'
+    code: ambiguous
+    payload:
+      sentence: 日勤または時短9-16時
+    item_id: f3a709a0
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「8-15時など」'
+    code: ambiguous
+    payload:
+      sentence: 8-15時など
+    item_id: 364c9c82
+  customer_answers:
+    a529e528-a5d1-4da2-bfe7-aa90f1bf5ae4#06a82f3b: 必ず守る
+    a529e528-a5d1-4da2-bfe7-aa90f1bf5ae4#324e0d06: 意味としては、毎月、出勤希望の日を聞き取っていますので、その出勤希望日に勤務を組むということです。希望ですので、叶えられない日があってもOKです。
+    a529e528-a5d1-4da2-bfe7-aa90f1bf5ae4#c716fbbd: 必ず守る
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「出勤可能な日を希望します」'
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「日勤または時短9-16時」'
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「8-15時など」'
+- staff_id: 6dcc6906-b95f-46f8-888f-9067c20d723c
+  name: 木村
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ㉔
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 1
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count:
+  - 2
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: true
+  late_night_only: true
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints:
+  - other_staff: 橋本
+    kind: no_pair_night
+    max_count: null
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: true
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '深夜勤務のみ。
+
+    夜勤専従で毎月2〜3回希望してくるのもを検討して確定。
+
+    夜勤はスタッフWと同席不可。'
+  raw_notes: 希望した日のみ勤務(施設の担当者のご要望・2026年9月)
+  unparsed_notes: []
+  review_items:
+  - message: '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「夜勤専従で毎月2〜3回希望してくるのもを検討して確定」'
+    code: typo
+    payload:
+      sentence: 夜勤専従で毎月2〜3回希望してくるのもを検討して確定
+    item_id: 3e562fb2
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤専従で毎月2〜3回希望してくるのもを検討して確定」'
+    code: ambiguous
+    payload:
+      sentence: 夜勤専従で毎月2〜3回希望してくるのもを検討して確定
+    item_id: b462c8c5
+  - message: 勤務形態の限定が複数読み取られました(夜勤専従 / 深夜のみ)。どれが正しいか確認してください
+    code: exclusive_conflict
+    payload:
+      candidates:
+      - 夜勤専従
+      - 深夜のみ
+    item_id: 03c59a13
+  - message: '同席の相手を担当者さんが確認して確定しました: 橋本と同席不可'
+    code: pair_confirmed
+    payload:
+      label: 木村/同席
+    item_id: d2b27697
+  customer_answers:
+    6dcc6906-b95f-46f8-888f-9067c20d723c#6789c1a3: 必ず守る
+    6dcc6906-b95f-46f8-888f-9067c20d723c#717408ec: 夜勤は月2〜3回希望した日を勤務に入れます。
+    6dcc6906-b95f-46f8-888f-9067c20d723c#aa1922cd: 深夜のみ
+    6dcc6906-b95f-46f8-888f-9067c20d723c#d94ed774: はい（合っています）
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「夜勤専従で毎月2〜3回希望してくるのもを検討して確定」'
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤専従で毎月2〜3回希望してくるのもを検討して確定」'
+  - 勤務形態の限定が複数読み取られました(夜勤専従 / 深夜のみ)。どれが正しいか確認してください
+  - '同席の相手を担当者さんが確認して確定しました: 橋本と同席不可'
+- staff_id: d919735e-0018-4c0e-9b34-4e836fd03ad4
+  name: 清水
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑥
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 2
+  - 4
+  late_night_shift_count:
+  - 3
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints:
+  - other_staff: 坂本
+    kind: max_shared_night
+    max_count: 1
+  spread_night_partners: true
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤2〜4回まで
+
+    深夜3回か4回'
+  raw_notes: '夜勤はスタッフGと同席不可
+
+    （やむを得ない場合は一回だけ可）
+
+    夜勤は同じナースが複数回同席しないようにして下さい。'
+  unparsed_notes:
+  - '[備考] (やむを得ない場合は一回だけ可)'
+  review_items:
+  - message: '備考に未解釈の記述あり: 「(やむを得ない場合は一回だけ可)」'
+    code: unparsed
+    payload:
+      sentence: (やむを得ない場合は一回だけ可)
+    item_id: 1bdef6bd
+  - message: '同席の相手を担当者さんが確認して確定しました: 坂本と同席は月1回まで'
+    code: pair_confirmed
+    payload:
+      label: 清水/同席
+    item_id: d7a9f50c
+  - message: 夜間に組む相手が特定の人に偏らないようにする要望として扱いました(絶対厳守ではなく、できるだけ散らす)。担当者さん確認済み
+    code: spread_partners
+    payload:
+      label: 清水/同席の散らし
+    item_id: 36603b26
+  customer_answers:
+    d919735e-0018-4c0e-9b34-4e836fd03ad4#35a1fae5: はい（合っています）
+    d919735e-0018-4c0e-9b34-4e836fd03ad4#56209d8d: スタッフか」が準夜勤、及び深夜勤という勤務に入る際には、準夜勤、深夜勤を組む相手がもう1人必要です。その際、同じ人を２回以上組まないように配慮してください」という意味です。
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '備考に未解釈の記述あり: 「(やむを得ない場合は一回だけ可)」'
+  - '同席の相手を担当者さんが確認して確定しました: 坂本と同席は月1回まで'
+  - 夜間に組む相手が特定の人に偏らないようにする要望として扱いました(絶対厳守ではなく、できるだけ散らす)。担当者さん確認済み
+- staff_id: 7f259811-b2d8-4cb2-a810-a88a25fda705
+  name: 阿部
+  role: 管理者、看護師
+  employment_type: 正社員
+  sheet_label: '5'
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: 可
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: ''
+  raw_notes: '日責可能
+
+    20:30以降の遅番は不可'
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 6c2f0510-b021-4f22-a175-f30bd6b445fa
+  name: 森田
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '4'
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 5
+  - 6
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays:
+  - 4
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 夜勤は金曜日
+  raw_notes: 夜勤は5〜6回
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: ade0b113-45f0-4264-a2a9-d56850bef8ed
+  name: 池田
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑤
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 3
+  - 4
+  late_night_shift_count:
+  - 0
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤3〜4回希望
+
+    深夜3回まで
+
+    ※明けの公休では無いところに連休を一回入れて下さい。'
+  raw_notes: ''
+  unparsed_notes:
+  - '[固定条件] ※明けの公休では無いところに連休を一回入れて下さい'
+  review_items:
+  - message: '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤3〜4回希望」'
+    code: ambiguous
+    payload:
+      sentence: 夜勤3〜4回希望
+    item_id: 8e50b924
+  - message: '固定条件に未解釈の記述あり: 「※明けの公休では無いところに連休を一回入れて下さい」'
+    code: unparsed
+    payload:
+      sentence: ※明けの公休では無いところに連休を一回入れて下さい
+    item_id: a1626d5a
+  customer_answers:
+    ade0b113-45f0-4264-a2a9-d56850bef8ed#b31bf6fc: 必ず守る
+    ade0b113-45f0-4264-a2a9-d56850bef8ed#be2a14f2: ※明けの公休では無いところに連休を一回入れて下さい」は、記載通り、連休を月に一回入れてください。ただし、現在のルールでは明けの次が必ず「公休」になっていますが、それを使わずに連休を月に一回は組むということです。
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '断定できない表現が含まれます。意図どおりか確認してください: 「夜勤3〜4回希望」'
+  - '固定条件に未解釈の記述あり: 「※明けの公休では無いところに連休を一回入れて下さい」'
+- staff_id: 051f938b-aeac-409c-afeb-256f7c27a3fa
+  name: 橋本
+  role: 看護師
+  employment_type: パート（時間給）
+  sheet_label: '13'
+  unit: さくら
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 2
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays:
+  - 1
+  night_shift_exclusive: true
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤専従
+
+    毎週火曜日固定'
+  raw_notes: 希望した日のみ勤務(施設の担当者のご要望・2026年9月)
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: e0d64222-c7cf-4ce6-b540-bfcf6524241f
+  name: 石川
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑧
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 1
+  - 4
+  late_night_shift_count:
+  - 2
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤1〜4回
+
+    深夜2回〜4回'
+  raw_notes: 介護リーダー
+  unparsed_notes:
+  - '[備考] 介護リーダー'
+  review_items:
+  - message: '備考に未解釈の記述あり: 「介護リーダー」'
+    code: unparsed
+    payload:
+      sentence: 介護リーダー
+    item_id: '66682040'
+  customer_answers: {}
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '備考に未解釈の記述あり: 「介護リーダー」'
+- staff_id: fc4b1cf4-074d-48cd-b871-1bff0ff8c8b4
+  name: 前田
+  role: 看護師
+  employment_type: パート（時間給）
+  sheet_label: '11'
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 4
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日③
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays:
+  - 2
+  - 5
+  - 6
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: 2026-09
+  raw_conditions: 毎週水曜日と、土日休み
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 早出
+      removed:
+      - 日①
+      - 日②
+    item_id: 1544719e
+  - message: CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 遅出
+      removed:
+      - 日⑤
+      - 日⑦
+      - 日⑨
+    item_id: 6cf66e35
+  customer_answers:
+    fc4b1cf4-074d-48cd-b871-1bff0ff8c8b4#4839cea0: 遅出とは、日５、日７、日９です。
+    fc4b1cf4-074d-48cd-b871-1bff0ff8c8b4#e05ce578: はい（合っています）
+  needs_review: true
+  _固定休み曜日:
+  - 水
+  - 土
+  - 日
+  review_reasons:
+  - CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+  - CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+- staff_id: d15e662f-445a-4209-bca9-5f563801d5e5
+  name: 藤田
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ⑨
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 3
+  can_night: false
+  can_late_night: false
+  available_day_shifts: []
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots:
+  - weekday: 0
+    start: 09:00
+    end: '15:00'
+  - weekday: 2
+    start: 09:00
+    end: '13:00'
+  - weekday: 3
+    start: 09:00
+    end: '15:00'
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週月曜日は9-15時
+
+    水曜日は9-13時
+
+    木曜日は9-15時'
+  raw_notes: 曜日を 金→木 に変更(施設の担当者のご要望・2026年9月)
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 7398dd80-2d55-4d28-98c1-cabb14912d90
+  name: 後藤
+  role: 介護士
+  employment_type: パート（時間給）
+  sheet_label: ㉓
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 3
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日③
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: true
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: true
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '出勤日はあらかじめ希望あり。
+
+    毎週月曜日〜金曜日のうち
+
+    3回〜4回。
+
+    日勤のみ可能。
+
+    どうしても足りない時の土曜日か日曜日に出勤可能なことがある。その時は相談が必要。'
+  raw_notes: 希望した日のみ勤務(施設の担当者のご要望・2026年9月)
+  unparsed_notes:
+  - '[固定条件] 出勤日はあらかじめ希望あり'
+  - '[固定条件] 毎週月曜日〜金曜日のうち'
+  - '[固定条件] 3回〜4回'
+  - '[固定条件] どうしても足りない時の土曜日か日曜日に出勤可能なことがある'
+  - '[固定条件] その時は相談が必要'
+  review_items:
+  - message: '固定条件に未解釈の記述あり: 「出勤日はあらかじめ希望あり」'
+    code: unparsed
+    payload:
+      sentence: 出勤日はあらかじめ希望あり
+    item_id: 8bc53f83
+  - message: '固定条件に未解釈の記述あり: 「毎週月曜日〜金曜日のうち」'
+    code: unparsed
+    payload:
+      sentence: 毎週月曜日〜金曜日のうち
+    item_id: cc078ea8
+  - message: '固定条件に未解釈の記述あり: 「3回〜4回」'
+    code: unparsed
+    payload:
+      sentence: 3回〜4回
+    item_id: bd6cec0d
+  - message: '固定条件に未解釈の記述あり: 「どうしても足りない時の土曜日か日曜日に出勤可能なことがある」'
+    code: unparsed
+    payload:
+      sentence: どうしても足りない時の土曜日か日曜日に出勤可能なことがある
+    item_id: 700d2929
+  - message: '固定条件に未解釈の記述あり: 「その時は相談が必要」'
+    code: unparsed
+    payload:
+      sentence: その時は相談が必要
+    item_id: b8f5a109
+  - message: CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 早出
+      removed:
+      - 日①
+      - 日②
+    item_id: 1544719e
+  - message: CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 遅出
+      removed:
+      - 日⑤
+      - 日⑦
+      - 日⑨
+    item_id: 6cf66e35
+  customer_answers:
+    7398dd80-2d55-4d28-98c1-cabb14912d90#1270a348: 遅出とは、日５、日７、日９です。
+    7398dd80-2d55-4d28-98c1-cabb14912d90#4b7407a2: 特になし
+    7398dd80-2d55-4d28-98c1-cabb14912d90#6beb98d9: はい（合っています）
+    7398dd80-2d55-4d28-98c1-cabb14912d90#bcff88f5: この勤務表を組むときには、あらかじめ希望休と希望出勤をそれぞれの人に聞き取った上で勤務表を組むことになります。なので、その時に出勤希望を聞き取ったものを入れてください
+    7398dd80-2d55-4d28-98c1-cabb14912d90#beb4b39a: 毎週月曜日から金曜日のうち3回から4回は日勤のみの勤務を組んでください
+    7398dd80-2d55-4d28-98c1-cabb14912d90#d0918695: 毎週月曜日から金曜日のうち3回から4回は日勤のみの勤務を組んでください
+    7398dd80-2d55-4d28-98c1-cabb14912d90#f017c063: 特になし
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '固定条件に未解釈の記述あり: 「出勤日はあらかじめ希望あり」'
+  - '固定条件に未解釈の記述あり: 「毎週月曜日〜金曜日のうち」'
+  - '固定条件に未解釈の記述あり: 「3回〜4回」'
+  - '固定条件に未解釈の記述あり: 「どうしても足りない時の土曜日か日曜日に出勤可能なことがある」'
+  - '固定条件に未解釈の記述あり: 「その時は相談が必要」'
+  - CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+  - CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+- staff_id: 42b185a9-9e49-493b-9a79-240b557b367f
+  name: 小川
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '6'
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 3
+  - 4
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: 可
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 夜勤3回。やむを得ない場合4回
+  raw_notes: 日責可能
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: aa24add7-040d-4d27-b707-0e15135ba2c8
+  name: 岡田
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑦
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 3
+  - 4
+  late_night_shift_count:
+  - 3
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤3回か4回
+
+    深夜3回か4回'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: d5afb305-df36-43eb-b3ba-701fedc3f9c7
+  name: 村上
+  role: 准看護師
+  employment_type: 正社員
+  sheet_label: '7'
+  unit: ゆり
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: false
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours:
+  - 06:00
+  - '17:00'
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: true
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: '夜勤不可。深夜可能。
+
+    6時から17時迄の枠で早出、日勤、遅番が可能'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 0e103dd8-6218-4a8a-9bf7-bb10557d8620
+  name: 近藤
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑫
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 2
+  - 3
+  late_night_shift_count:
+  - 3
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota:
+    金: 2
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints:
+  - other_staff: 小川
+    kind: no_pair_night
+    max_count: null
+  - other_staff: 橋本
+    kind: no_pair_night
+    max_count: null
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎月2回は金曜日休み。
+
+    夜勤2〜3回。
+
+    深夜3回。
+
+    夜勤スタッフEとWは同席不可。'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: '同席の相手を担当者さんが確認して確定しました: 小川と同席不可、橋本と同席不可'
+    code: pair_confirmed
+    payload:
+      label: 近藤/同席
+    item_id: da0e1573
+  customer_answers:
+    0e103dd8-6218-4a8a-9bf7-bb10557d8620#caaaee70: はい（合っています）
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '同席の相手を担当者さんが確認して確定しました: 小川と同席不可、橋本と同席不可'
+- staff_id: 636a5bb4-9476-4c13-b742-a660ab60388e
+  name: 坂本
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '9'
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 4
+  - 6
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints:
+  - other_staff: 池田
+    kind: no_pair_night
+    max_count: null
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 'スタッフお、と同席夜勤は不可。
+
+    夜勤4〜6回'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: '同席の相手を担当者さんが確認して確定しました: 池田と同席不可'
+    code: pair_confirmed
+    payload:
+      label: 坂本/同席
+    item_id: 8347fccc
+  customer_answers:
+    636a5bb4-9476-4c13-b742-a660ab60388e#27750767: はい（合っています）
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '同席の相手を担当者さんが確認して確定しました: 池田と同席不可'
+- staff_id: 遠藤
+  name: 遠藤
+  role: 看護師
+  employment_type: 派遣
+  sheet_label: ''
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 4
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: true
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: true
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: true
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 日勤のみ
+  raw_notes: 日曜日から土曜日のうち4日勤務。土日のどちらか休む。
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 38f223f9-c3dd-47f4-86d9-94111a69df11
+  name: 青木
+  role: 看護師
+  employment_type: パート（時間給）
+  sheet_label: '12'
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 3
+  can_night: false
+  can_late_night: false
+  available_day_shifts:
+  - 日③
+  - 日
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays:
+  - 5
+  - 6
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: true
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週土日休み
+
+    月曜日から金曜日の中でランダム'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items:
+  - message: CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 早出
+      removed:
+      - 日①
+      - 日②
+    item_id: 1544719e
+  - message: CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+    code: early_late_column
+    payload:
+      label: 遅出
+      removed:
+      - 日⑤
+      - 日⑦
+      - 日⑨
+    item_id: 6cf66e35
+  customer_answers:
+    38f223f9-c3dd-47f4-86d9-94111a69df11#ab16fb46: 遅出とは、日５、日７、日９です。
+    38f223f9-c3dd-47f4-86d9-94111a69df11#b2737232: はい（合っています）
+  needs_review: true
+  _固定休み曜日:
+  - 土
+  - 日
+  review_reasons:
+  - CSVの「早出」列が不可だったので日①・日②を外しました。この解釈で合っているか確認してください
+  - CSVの「遅出」列が不可だったので日⑤・日⑦・日⑨を外しました。この解釈で合っているか確認してください
+- staff_id: 255ee3c6-5f9d-49e2-92cf-cb50be2d8467
+  name: 福田
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑪
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts:
+    1:
+    - 日①
+    - 日②
+    2:
+    - 日①
+    - 日②
+    4:
+    - 日①
+    - 日②
+  qualifications: []
+  night_shift_count:
+  - 1
+  - 2
+  late_night_shift_count:
+  - 0
+  - 3
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: true
+  leave_from: null
+  raw_conditions: '毎週火曜日・水曜日・金曜日は8時より前の早番は不可。
+
+    遅番の⑦は少なめにして下さい。
+
+    夜勤1回（やむを得ない場合は2回可）
+
+    深夜3回まで。'
+  raw_notes: ''
+  unparsed_notes:
+  - '[固定条件] 遅番の7は少なめにして下さい'
+  review_items:
+  - message: '火・水・金曜だけにかかる条件として取り込みました。他の曜日は制限していません: 「毎週火曜日・水曜日・金曜日は8時より前の早番は不可」'
+    code: weekday_time
+    payload:
+      sentence: 毎週火曜日・水曜日・金曜日は8時より前の早番は不可
+    item_id: 828cfb3c
+  - message: '固定条件に未解釈の記述あり: 「遅番の7は少なめにして下さい」'
+    code: unparsed
+    payload:
+      sentence: 遅番の7は少なめにして下さい
+    item_id: a06eb675
+  customer_answers:
+    255ee3c6-5f9d-49e2-92cf-cb50be2d8467#495aff57: その曜日だけ
+    255ee3c6-5f9d-49e2-92cf-cb50be2d8467#4eac352c: 日７は月に１回にしてください
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '火・水・金曜だけにかかる条件として取り込みました。他の曜日は制限していません: 「毎週火曜日・水曜日・金曜日は8時より前の早番は不可」'
+  - '固定条件に未解釈の記述あり: 「遅番の7は少なめにして下さい」'
+- staff_id: 909299c6-19e2-4f92-a30e-5c61f46d4a7d
+  name: 三浦
+  role: 看護師
+  employment_type: 正社員
+  sheet_label: '8'
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 5
+  - 6
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: 条件付き可
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: 夜勤5回〜6回
+  raw_notes: 日責はどうしてもいないときは可能
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 0ece7e87-b915-4e98-80dd-13bfa1635dd1
+  name: 太田
+  role: 介護士
+  employment_type: 正社員
+  sheet_label: ⑩
+  unit: すみれ
+  is_support_staff: false
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: true
+  can_late_night: true
+  available_day_shifts:
+  - 日①
+  - 日②
+  - 日③
+  - 日
+  - 日⑤
+  - 日⑦
+  - 日⑨
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count:
+  - 3
+  - 3
+  late_night_shift_count:
+  - 3
+  - 4
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots: []
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '夜勤3回
+
+    深夜3回〜4回'
+  raw_notes: ''
+  unparsed_notes: []
+  review_items: []
+  customer_answers: {}
+  needs_review: false
+  _固定休み曜日: []
+  review_reasons: []
+- staff_id: 730d7f54-2912-4491-b758-f5b8c2cb1305
+  name: 原田
+  role: その他
+  employment_type: パート（時間給）
+  sheet_label: ㉖
+  unit: ''
+  is_support_staff: true
+  social_insurance: ''
+  weekly_work_days: 5
+  can_night: false
+  can_late_night: false
+  available_day_shifts: []
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots:
+  - weekday: 0
+    start: '10:00'
+    end: '13:00'
+  - weekday: 0
+    start: '19:00'
+    end: '20:00'
+  - weekday: 1
+    start: '19:00'
+    end: '20:00'
+  - weekday: 3
+    start: '19:00'
+    end: '20:00'
+  - weekday: 4
+    start: '19:00'
+    end: '20:00'
+  - weekday: 6
+    start: '19:00'
+    end: '20:00'
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週月曜日10-13時と19-20時
+
+    火曜日19-20時
+
+    木曜日10-13月と19-20時
+
+    金曜日19-20時
+
+    日曜日19-20時'
+  raw_notes: 環境整備や物品補充など対人ケアに入らないスポットパート。
+  unparsed_notes:
+  - '[備考] 環境整備や物品補充など対人ケアに入らないスポットパート'
+  review_items:
+  - message: '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「木曜日10-13月と19-20時」'
+    code: typo
+    payload:
+      sentence: 木曜日10-13月と19-20時
+    item_id: 2b2bbff1
+  - message: '備考に未解釈の記述あり: 「環境整備や物品補充など対人ケアに入らないスポットパート」'
+    code: unparsed
+    payload:
+      sentence: 環境整備や物品補充など対人ケアに入らないスポットパート
+    item_id: b41d3d20
+  customer_answers:
+    730d7f54-2912-4491-b758-f5b8c2cb1305#2d5981df: 他の勤務とは別で考えてもらったら良いです。
+    730d7f54-2912-4491-b758-f5b8c2cb1305#6a8ec3b1: '毎週4日の勤務です
+
+      火曜日が19時から20時
+
+      木曜日は10時から13時と19時、20時(つまり中抜けです)
+
+      金曜日は19時から20時
+
+      日曜日は19時から20時です'
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「木曜日10-13月と19-20時」'
+  - '備考に未解釈の記述あり: 「環境整備や物品補充など対人ケアに入らないスポットパート」'
+- staff_id: e34d6b05-d7a3-4e27-bda4-fc0ed08aa71d
+  name: 中島
+  role: その他
+  employment_type: パート（時間給）
+  sheet_label: ㉕
+  unit: ''
+  is_support_staff: true
+  social_insurance: ''
+  weekly_work_days: 4
+  can_night: false
+  can_late_night: false
+  available_day_shifts: []
+  weekday_unavailable_shifts: {}
+  qualifications: []
+  night_shift_count: null
+  late_night_shift_count: null
+  fixed_off_weekdays: []
+  weekend_off_either: false
+  monthly_off_quota: {}
+  work_hours: null
+  fixed_time_slots:
+  - weekday: 1
+    start: 09:00
+    end: '12:00'
+  - weekday: 2
+    start: '19:00'
+    end: '20:00'
+  - weekday: 4
+    start: 09:00
+    end: '12:00'
+  - weekday: 5
+    start: 09:00
+    end: '12:00'
+  night_weekdays: []
+  fixed_work_weekdays: []
+  night_shift_exclusive: false
+  late_night_only: false
+  day_shift_only: false
+  day_responsible: null
+  can_late_night_as_nurse: false
+  is_head_nurse: false
+  pair_constraints: []
+  spread_night_partners: false
+  random_days_allowed: false
+  works_only_on_request: false
+  preferred_night: false
+  avoid_early: false
+  last_resort_day_shifts: []
+  time_restricted: false
+  leave_from: null
+  raw_conditions: '毎週火曜日9-12時
+
+    水曜日9-12と19-20時
+
+    金曜日9-12時
+
+    土曜日9-12時'
+  raw_notes: 環境整備や物品補充など対人ケアに入らないスポットパート。
+  unparsed_notes:
+  - '[備考] 環境整備や物品補充など対人ケアに入らないスポットパート'
+  review_items:
+  - message: '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「水曜日9-12と19-20時」'
+    code: typo
+    payload:
+      sentence: 水曜日9-12と19-20時
+    item_id: 91be8993
+  - message: '備考に未解釈の記述あり: 「環境整備や物品補充など対人ケアに入らないスポットパート」'
+    code: unparsed
+    payload:
+      sentence: 環境整備や物品補充など対人ケアに入らないスポットパート
+    item_id: b41d3d20
+  customer_answers:
+    e34d6b05-d7a3-4e27-bda4-fc0ed08aa71d#2e98fa72: 毎週、水曜日9-12と19-20時（つまり中抜け）の勤務を毎週水曜日に組む
+    e34d6b05-d7a3-4e27-bda4-fc0ed08aa71d#59a4650e: 他の勤務とは別で考えてもらったら良いです。
+  needs_review: true
+  _固定休み曜日: []
+  review_reasons:
+  - '数値の範囲を取りこぼしている可能性があります(誤字の疑い): 「水曜日9-12と19-20時」'
+  - '備考に未解釈の記述あり: 「環境整備や物品補充など対人ケアに入らないスポットパート」'

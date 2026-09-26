@@ -1,0 +1,16 @@
+# 施設ごとに変わる呼び名。ここを書き換えれば、コードを触らずに別の施設向けにできる。
+# このファイルが無くても、facility.py の既定値で動きます。
+
+facility_name: ひまわり苑          # 施設の名前（画面やREADMEに出す）
+ward_label: 第1病棟                # 勤務表の左上に入る病棟・フロアの名前
+case_name: デモ案件                # 読み取り結果HTMLに出す案件名
+
+# ダウンロードするExcelのファイル名。{year} {month} {ward} が使えます。
+download_name_template: "勤務計画表_{year}年{month:02d}月_{ward}全体.xlsx"
+
+# 所属ユニット。勤務表の行はこの順に並びます。
+units:
+  - ばら
+  - さくら
+  - ゆり
+  - すみれ
